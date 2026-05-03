@@ -36,7 +36,7 @@ Respond ONLY with a valid JSON object in exactly this format (no markdown, no ex
   "verdict": "<one of: Strong Match | Good Match | Partial Match | Weak Match>"
 }`;
 
-    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+    const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
     const result = await model.generateContent(prompt);
     const text = result.response.text().trim();
 
