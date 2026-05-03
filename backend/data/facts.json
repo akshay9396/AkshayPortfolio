@@ -1,0 +1,42 @@
+{
+  "full_name": "Akshay Pralhad Kanade",
+  "name": "Akshay",
+  "current_role": "Software Developer (AI / ML Engineer) with experience in Computer Vision, MLOps, and Edge AI",
+  "location": "Regensburg, Germany",
+  "email": "akshaykanade77@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/akshay-kanade-746398122",
+
+  "specialties": [
+    "Artificial Intelligence (AI)",
+    "Machine Learning (ML)",
+    "Computer Vision",
+    "Deep Learning",
+    "Vision Transformers (ViTs)",
+    "CNNs",
+    "Model Optimization (Pruning, Quantization, Mixed Precision)",
+    "Edge AI Deployment",
+    "TensorRT & ONNX Optimization",
+    "MLOps (MLflow, DVC, CI/CD)",
+    "Docker & Kubernetes",
+    "FastAPI & REST APIs",
+    "Retrieval-Augmented Generation (RAG)",
+    "LLMs & Hugging Face Transformers",
+    "FAISS & Embeddings",
+    "Cloud Platforms (AWS, Azure ML, GCP)"
+  ],
+
+  "years_experience": 6,
+
+  "education": [
+    {
+      "degree": "Master of Engineering in Electrical Engineering and Embedded Systems",
+      "institution": "Hochschule Ravensburg-Weingarten, Germany",
+      "year": "Sep 2021 - Oct 2023"
+    },
+    {
+      "degree": "Bachelor of Engineering in Electronics and Telecommunication",
+      "institution": "Savitribai Phule Pune University, India",
+      "year": "May 2014 - Jun 2018"
+    }
+  ]
+}
