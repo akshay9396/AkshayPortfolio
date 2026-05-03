@@ -20,6 +20,7 @@ import {
 import { resume } from '@/data/resume';
 import GradientText from '@/components/ui/GradientText';
 import SectionReveal from '@/components/ui/SectionReveal';
+import JDAnalyzer from '@/components/sections/JDAnalyzer';
 import { useReducedMotion } from '@/hooks/useReducedMotion';
 
 const downloadFilename = `${resume.name.replace(/\s+/g, '_')}_Resume.pdf`;
@@ -534,6 +535,8 @@ export default function PortfolioCanvas() {
           </div>
         </div>
       </section>
+
+      <JDAnalyzer />
 
       <section id="contact" className="px-6 py-14 pb-24">
         <div className="max-w-6xl mx-auto">
