@@ -1,6 +1,6 @@
 # AkshayPortfolio - Personal Portfolio Website
 
-A modern personal portfolio website built with **Next.js**, featuring animated sections for Experience, Projects, Skills, Certifications, and Contact — with an AI-powered chat twin and job description analyzer.
+A modern personal portfolio website built with **Next.js**, featuring animated sections for Experience, Projects, Skills, Certifications, and Contact — with an AI-powered chat twin and job descri[...] 
 
 Live at: [akshay-kanade.vercel.app](https://akshay-kanade.vercel.app)
 
@@ -8,7 +8,7 @@ Live at: [akshay-kanade.vercel.app](https://akshay-kanade.vercel.app)
 
 ## About
 
-This is the personal portfolio of **Akshay Kanade**, Software Developer. The site presents work history, projects, skills, and contact information in a clean, animated interface — plus two AI features powered by Groq AI.
+This is the personal portfolio of **Akshay Kanade**, Software Developer. The site presents work history, projects, skills, and contact information in a clean, animated interface — plus two AI fe[...] 
 
 ---
 
@@ -61,8 +61,8 @@ AkshayPortfolio/
 │   │   ├── layout.tsx             # Root layout and metadata
 │   │   ├── globals.css            # Theme tokens and global styles
 │   │   └── api/
-│   │       ├── chat/route.ts      # Gemini streaming chat API
-│   │       └── analyze/route.ts   # Gemini JD analyzer API
+│   │       ├── chat/route.ts      # Groq streaming chat API
+│   │       └── analyze/route.ts   # Groq JD analyzer API
 │   ├── components/
 │   │   ├── widgets/
 │   │   │   └── TwinFloatingButton.tsx  # Floating avatar + chat panel
@@ -130,14 +130,17 @@ Replace `frontend/public/avatar.png` with your own photo.
 3. Click **Add New Project** and import this repo
 4. Set **Root Directory** to `frontend`
 5. Go to **Settings → Environment Variables** and add:
-   - `GEMINI_API_KEY` = your Gemini API key
+   - `GROQ_API_KEY` = your Groq API key
 6. Click **Deploy**
 
-You get a free URL: `https://yourname.vercel.app`
+Your application will be deployed to a Vercel URL, for example:
+`https://your-project.vercel.app`
 
 ---
 
 ## Author
 
-**Akshay Kanade** - Software Developer
-GitHub: [github.com/akshay9396](https://github.com/akshay9396)
+**Akshay Kanade**  
+Software Developer
+
+GitHub: https://github.com/akshay9396
