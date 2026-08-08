@@ -216,19 +216,22 @@ export default function PortfolioCanvas() {
                   Core Stack
                 </p>
                 <div className="flex flex-wrap gap-1.5">
-                  {[
-                    { label: 'Python',      heat: 5 },
-                    { label: 'PyTorch',     heat: 5 },
-                    { label: 'TensorRT',    heat: 4 },
-                    { label: 'YOLO',        heat: 4 },
-                    { label: 'OpenCV',      heat: 5 },
-                    { label: 'Docker',      heat: 4 },
-                    { label: 'MLflow',      heat: 4 },
-                    { label: 'FastAPI',     heat: 3 },
-                    { label: 'RAG',         heat: 4 },
-                    { label: 'AWS',         heat: 3 },
-                    { label: 'LangChain',   heat: 3 },
-                    { label: 'CI/CD',       heat: 4 },
+                 {[
+                 { label: 'Python',       heat: 5 },
+                 { label: 'PyTorch',      heat: 5 },
+                 { label: 'YOLO',         heat: 5 },
+                 { label: 'OpenCV',       heat: 5 },
+                 { label: 'Hugging Face', heat: 4 },
+                 { label: 'LLMs',         heat: 4 },
+                 { label: 'RAG',          heat: 4 },
+                 { label: 'Agentic AI',   heat: 4 },
+                 { label: 'n8n',          heat: 4 },
+                 { label: 'TensorRT',     heat: 4 },
+                 { label: 'Docker',       heat: 4 },
+                 { label: 'MLflow',       heat: 4 },
+                 { label: 'FastAPI',      heat: 3 },
+                 { label: 'AWS',          heat: 3 },
+                 { label: 'CI/CD',       heat: 4 },
                   ].map(({ label, heat }) => {
                     const opacity = 0.06 + (heat / 5) * 0.22;
                     const textOpacity = 0.55 + (heat / 5) * 0.45;
@@ -329,125 +332,187 @@ export default function PortfolioCanvas() {
         </div>
       </section>
 
-      <section id="skills" className="px-6 py-14">
-        <div className="max-w-6xl mx-auto">
-          <SectionReveal>
-            <h2 className="portfolio-heading">Technical Stack</h2>
-          </SectionReveal>
+<section id="skills" className="px-6 py-14">
+  <div className="max-w-6xl mx-auto">
+    <SectionReveal>
+      <h2 className="portfolio-heading">Technical Stack</h2>
+    </SectionReveal>
 
-          <SectionReveal delay={0.08}>
-            <div className="mt-7 grid md:grid-cols-2 xl:grid-cols-3 gap-4">
-              {([
-                {
-                  key: 'programmingLanguages',
-                  label: 'Programming Languages',
-                  color: '#10b981',
-                  bg: 'rgba(16,185,129,0.10)',
-                  border: 'rgba(16,185,129,0.22)',
-                  items: resume.skills.programmingLanguages,
-                },
-                {
-                  key: 'mlFrameworks',
-                  label: 'ML Frameworks',
-                  color: '#10b981',
-                  bg: 'rgba(16,185,129,0.10)',
-                  border: 'rgba(16,185,129,0.22)',
-                  items: resume.skills.mlFrameworks,
-                },
-                {
-                  key: 'computerVision',
-                  label: 'Computer Vision',
-                  color: '#06b6d4',
-                  bg: 'rgba(6,182,212,0.10)',
-                  border: 'rgba(6,182,212,0.22)',
-                  items: resume.skills.computerVision,
-                },
-                {
-                  key: 'ml',
-                  label: 'ML Concepts & Edge AI',
-                  color: '#06b6d4',
-                  bg: 'rgba(6,182,212,0.10)',
-                  border: 'rgba(6,182,212,0.22)',
-                  items: resume.skills.ml,
-                },
-                {
-                  key: 'genai',
-                  label: 'Generative AI & LLMs',
-                  color: '#8b5cf6',
-                  bg: 'rgba(139,92,246,0.10)',
-                  border: 'rgba(139,92,246,0.22)',
-                  items: resume.skills.genai,
-                },
-                {
-                  key: 'agentic',
-                  label: 'Agentic AI',
-                  color: '#f59e0b',
-                  bg: 'rgba(245,158,11,0.10)',
-                  border: 'rgba(245,158,11,0.22)',
-                  items: resume.skills.agentic,
-                },
-                {
-                  key: 'cloud',
-                  label: 'Cloud Platforms',
-                  color: '#7c3aed',
-                  bg: 'rgba(124,58,237,0.10)',
-                  border: 'rgba(124,58,237,0.22)',
-                  items: resume.skills.cloud,
-                },
-                {
-                  key: 'devops',
-                  label: 'CI/CD & DevOps',
-                  color: '#ef4444',
-                  bg: 'rgba(239,68,68,0.10)',
-                  border: 'rgba(239,68,68,0.22)',
-                  items: resume.skills.devops,
-                },
-                {
-                  key: 'databases',
-                  label: 'Databases & Storage',
-                  color: '#06b6d4',
-                  bg: 'rgba(6,182,212,0.10)',
-                  border: 'rgba(6,182,212,0.22)',
-                  items: resume.skills.databases,
-                },
-              ] as const).map(({ key, label, color, bg, border, items }) => (
-                <motion.div
-                  key={key}
-                  className="portfolio-panel rounded-3xl p-5 flex flex-col gap-3"
-                  initial={{ opacity: 0, y: 16 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: '-60px' }}
-                  transition={{ duration: 0.45, ease: 'easeOut' }}
+    <SectionReveal delay={0.08}>
+      <div className="mt-7 grid md:grid-cols-2 xl:grid-cols-3 gap-4">
+        {(
+          [
+            {
+              key: 'programmingLanguages',
+              label: 'Programming Languages',
+              color: '#10b981',
+              bg: 'rgba(16,185,129,0.10)',
+              border: 'rgba(16,185,129,0.22)',
+            },
+            {
+              key: 'mlFrameworks',
+              label: 'ML Frameworks',
+              color: '#10b981',
+              bg: 'rgba(16,185,129,0.10)',
+              border: 'rgba(16,185,129,0.22)',
+            },
+            {
+              key: 'computerVision',
+              label: 'Computer Vision',
+              color: '#06b6d4',
+              bg: 'rgba(6,182,212,0.10)',
+              border: 'rgba(6,182,212,0.22)',
+            },
+            {
+              key: 'ml',
+              label: 'ML Concepts & Edge AI',
+              color: '#06b6d4',
+              bg: 'rgba(6,182,212,0.10)',
+              border: 'rgba(6,182,212,0.22)',
+            },
+            {
+              key: 'genai',
+              label: 'Generative AI & LLMs',
+              color: '#8b5cf6',
+              bg: 'rgba(139,92,246,0.10)',
+              border: 'rgba(139,92,246,0.22)',
+            },
+            {
+              key: 'agentic',
+              label: 'Agentic AI',
+              color: '#f59e0b',
+              bg: 'rgba(245,158,11,0.10)',
+              border: 'rgba(245,158,11,0.22)',
+            },
+            {
+              key: 'autonomousSystems',
+              label: 'Autonomous Systems & ADAS',
+              color: '#e11d48',
+              bg: 'rgba(225,29,72,0.10)',
+              border: 'rgba(225,29,72,0.22)',
+            },
+            {
+              key: 'optimization',
+              label: 'Model Optimization & Edge Deployment',
+              color: '#f97316',
+              bg: 'rgba(249,115,22,0.10)',
+              border: 'rgba(249,115,22,0.22)',
+            },
+            {
+              key: 'dataEngineering',
+              label: 'Data Engineering & Analytics',
+              color: '#14b8a6',
+              bg: 'rgba(20,184,166,0.10)',
+              border: 'rgba(20,184,166,0.22)',
+            },
+            {
+              key: 'cloud',
+              label: 'Cloud Platforms',
+              color: '#7c3aed',
+              bg: 'rgba(124,58,237,0.10)',
+              border: 'rgba(124,58,237,0.22)',
+            },
+            {
+              key: 'databases',
+              label: 'Databases & Storage',
+              color: '#06b6d4',
+              bg: 'rgba(6,182,212,0.10)',
+              border: 'rgba(6,182,212,0.22)',
+            },
+            {
+              key: 'devops',
+              label: 'CI/CD & DevOps',
+              color: '#ef4444',
+              bg: 'rgba(239,68,68,0.10)',
+              border: 'rgba(239,68,68,0.22)',
+            },
+            {
+              key: 'web',
+              label: 'Web Development',
+              color: '#3b82f6',
+              bg: 'rgba(59,130,246,0.10)',
+              border: 'rgba(59,130,246,0.22)',
+            },
+            {
+              key: 'visualization',
+              label: 'Data Visualization & BI',
+              color: '#0ea5e9',
+              bg: 'rgba(14,165,233,0.10)',
+              border: 'rgba(14,165,233,0.22)',
+            },
+            {
+              key: 'annotation',
+              label: 'Data Annotation',
+              color: '#a855f7',
+              bg: 'rgba(168,85,247,0.10)',
+              border: 'rgba(168,85,247,0.22)',
+            },
+            {
+              key: 'aiAssistedDevelopment',
+              label: 'AI-Assisted Development',
+              color: '#ec4899',
+              bg: 'rgba(236,72,153,0.10)',
+              border: 'rgba(236,72,153,0.22)',
+            },
+          ] as const
+        ).map(({ key, label, color, bg, border }, index) => {
+          const items = resume.skills[key];
+
+          return (
+            <motion.div
+              key={key}
+              className="portfolio-panel rounded-3xl p-5 flex flex-col gap-3"
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{
+                once: true,
+                margin: '-60px',
+              }}
+              transition={{
+                duration: 0.45,
+                delay: index * 0.04,
+                ease: 'easeOut',
+              }}
+            >
+              <div className="flex items-center gap-2">
+                <span
+                  className="w-2 h-2 rounded-full flex-shrink-0"
+                  style={{
+                    background: color,
+                    boxShadow: `0 0 6px ${color}`,
+                  }}
+                />
+
+                <h4
+                  className="text-xs font-bold uppercase tracking-[0.18em]"
+                  style={{ color }}
                 >
-                  <div className="flex items-center gap-2">
-                    <span
-                      className="w-2 h-2 rounded-full flex-shrink-0"
-                      style={{ background: color, boxShadow: `0 0 6px ${color}` }}
-                    />
-                    <h4
-                      className="text-xs font-bold uppercase tracking-[0.18em]"
-                      style={{ color }}
-                    >
-                      {label}
-                    </h4>
-                  </div>
-                  <div className="flex flex-wrap gap-1.5">
-                    {items.map((skill: string) => (
-                      <span
-                        key={skill}
-                        className="px-2.5 py-1 rounded-full text-xs font-semibold"
-                        style={{ background: bg, color, border: `1px solid ${border}` }}
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </SectionReveal>
-        </div>
-      </section>
+                  {label}
+                </h4>
+              </div>
+
+              <div className="flex flex-wrap gap-1.5">
+                {items.map((skill) => (
+                  <span
+                    key={skill}
+                    className="px-2.5 py-1 rounded-full text-xs font-semibold"
+                    style={{
+                      background: bg,
+                      color,
+                      border: `1px solid ${border}`,
+                    }}
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </motion.div>
+          );
+        })}
+      </div>
+    </SectionReveal>
+  </div>
+</section>
 
       <section id="education" className="px-6 py-14">
         <div className="max-w-6xl mx-auto">

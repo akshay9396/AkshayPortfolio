@@ -65,22 +65,38 @@ export const resume = {
     address: "Prüfeninger Strasse 61, 93049 Regensburg, Germany",
     phone: "+49 15215423232",
     email: "akshaykanade77@gmail.com",
-    linkedin: "https://www.linkedin.com/in/akshay-kanade-746398122"
+    linkedin: "https://www.linkedin.com/in/akshay-kanade-746398122",
+    portfolio: "https://akshay-kanade.vercel.app/"
   },
 
   impact: <ImpactItem[]>[
     { value: 6, unit: "+", label: "Years of Experience" },
     { value: 70, unit: "%", label: "Inference Throughput Boost" },
     { value: 50, unit: "%", label: "Delivery Cycle Reduction" },
+     { value: 5, unit: "+", label: "Automated Application Steps" },
   ],
 
   experience: <Experience[]>[
     {
-      role: "AI/ML Engineer",
+      role: "Independent AI/ML Engineer",
+      type: "Independent",
+      company: "Projects & Technical Development",
+      location: "Regensburg, Germany",
+      period: "Nov 2025 – Present",
+      project: "",
+      bullets: [
+        "Built an AI-powered Product Recognition Dashboard using React, TypeScript, n8n, and Groq LLM, combining free-form product descriptions, fuzzy matching, and conversational AI",
+        "Automated 5+ manual steps in the job application process using AI agents and n8n, including company research, recruiter selection, language detection, personalized email generation, CV selection, and application tracking",
+        "Developed AI Incident Commander, an autonomous LLM agent with dynamic tool execution, human approval workflows, and memory-based learning for automated incident response",
+        "Built and experimented with 2+ GenAI/RAG applications using embeddings, vector search, LLMs, and FastAPI, while continuing professional development through German B1 studies and AI/ML certifications"
+      ]
+    },
+    {
+      role: "Software Developer (AI/ML Engineer)",
       type: "Full-time",
       company: "OneVision Software AG",
       location: "Regensburg, Germany",
-      period: "Jun 2024 – Nov 2025",
+      period: "Jan 2024 – Nov 2025",
       project: "Vision AI Platform",
       bullets: [
         "Designed end-to-end perception pipelines from ingestion to deployment, reducing delivery cycles by 50%",
@@ -155,64 +171,219 @@ export const resume = {
   ],
 
   skills: {
-    languages:            ["English (C1)", "German (A2 – learning B1)"] as string[],
-    databases:            ["SQL", "FAISS", "Vector Databases", "PostgreSQL"] as string[],
-    programmingLanguages: ["Python", "C++", "Pandas", "NumPy", "FastAPI"] as string[],
-    mlFrameworks:         ["TensorFlow", "PyTorch", "Scikit-learn", "Keras", "ONNX"] as string[],
-    computerVision:       ["OpenCV", "YOLO", "Detectron2", "Faster R-CNN", "U-Net", "TensorRT"] as string[],
-    ml:                   ["Deep Learning", "Transfer Learning", "CNNs", "Vision Transformers (ViTs)", "Model Fine-Tuning", "Supervised & Unsupervised Learning", "Pruning", "Quantization", "Mixed Precision", "Edge Deployment"] as string[],
-    genai:       ["Hugging Face Transformers", "RAG", "Prompt Engineering", "Embeddings", "LLM Fine-Tuning", "QLoRA"] as string[],
-    agentic:     ["LangChain", "AI Agents", "MCP", "n8n Automation", "Tool Use", "Voice Agents"] as string[],
-    cloud:       ["Azure ML", "AWS (S3, EC2, SageMaker)", "GCP"] as string[],
-    devops:      ["MLflow", "DVC", "Docker", "Kubernetes", "Jenkins", "CI/CD", "Git", "Linux", "ROS"] as string[],
-  },
+  languages: ["English (C1)", "German (A2 - currently learning B1)"] as string[],
 
-  projects: <Project[]>[
-    {
-      title: "AI-Based Object Detection & Segmentation",
-      subtitle: "Computer Vision · Edge Deployment",
-      period: "2022 – 2023",
-      bullets: [
-        "Implemented YOLOv5, Faster R-CNN, and U-Net across 5+ datasets achieving over 92% detection accuracy",
-        "Streamlined preprocessing pipelines using OpenCV and Albumentations, reducing preparation time by 40%",
-        "Optimized Jetson Nano inference using pruning and TensorRT, achieving 60% faster edge performance"
-      ],
-      tech: ["YOLOv5", "Faster R-CNN", "U-Net", "TensorRT", "OpenCV", "Jetson Nano"]
-    },
-    {
-      title: "MLOps Deployment & Monitoring Pipeline",
-      subtitle: "ML Engineering · DevOps",
-      period: "2023 – 2024",
-      bullets: [
-        "Established reproducible ML workflows using MLflow, DVC, and Docker across 20+ experiments",
-        "Implemented CI/CD pipelines reducing model release time by 35%",
-        "Built monitoring dashboards tracking 10+ performance metrics and model drift"
-      ],
-      tech: ["MLflow", "DVC", "Docker", "Kubernetes", "CI/CD", "Jenkins"]
-    },
-    {
-      title: "LLM-Based RAG Assistant",
-      subtitle: "Generative AI · LLM Engineering",
-      period: "2024",
-      bullets: [
-        "Developed a Retrieval-Augmented Generation system using embeddings and FAISS",
-        "Optimized document chunking and prompts, improving response relevance by 30%",
-        "Deployed a FastAPI-based inference service supporting multi-user concurrent access"
-      ],
-      tech: ["Hugging Face", "FAISS", "FastAPI", "RAG", "Embeddings", "LangChain"]
-    },
-    {
-      title: "Camera Calibration & Image Processing",
-      subtitle: "Sensor Fusion · Autonomous Systems",
-      period: "2022 – 2023",
-      bullets: [
-        "Performed intrinsic camera calibration with OpenCV achieving reprojection error of 0.0156",
-        "Applied edge detection, perspective correction, and geometric transformations",
-        "Validated calibration across multiple camera setups ensuring stable perception workflows"
-      ],
-      tech: ["OpenCV", "Python", "NumPy", "Camera Calibration", "ROS"]
-    }
-  ],
+  databases: ["SQL", "FAISS", "Vector Databases"] as string[],
+
+  programmingLanguages: [
+    "Python", "C++", "C", "SQL", "JavaScript", "TypeScript", "HTML5", "CSS3", "JSON"
+  ] as string[],
+
+  mlFrameworks: [
+    "PyTorch", "TensorFlow", "Scikit-learn", "Hugging Face Transformers"
+  ] as string[],
+
+  computerVision: [
+    "Object Detection", "Image Segmentation", "Image Classification", "Image Processing",
+    "OpenCV", "YOLO", "Faster R-CNN", "U-Net", "Detectron2", "Albumentations",
+    "Camera Calibration", "Dataset Curation", "Data Augmentation"
+  ] as string[],
+
+  ml: [
+    "Supervised Learning", "Unsupervised Learning", "Deep Learning", "Transfer Learning",
+    "Representation Learning", "Model Fine-Tuning", "Classification", "Regression",
+    "Feature Engineering", "Model Evaluation", "Model Validation", "CNNs",
+    "Transformers", "Vision Transformers (ViTs)", "Foundation Models"
+  ] as string[],
+
+  genai: [
+    "Large Language Models (LLMs)", "Hugging Face Transformers", "Prompt Engineering",
+    "Structured LLM Outputs", "RAG", "Embeddings", "Semantic Search",
+    "Vector Databases", "FAISS", "Conversational AI", "LLM Evaluation", "Groq API"
+  ] as string[],
+
+  agentic: [
+    "AI Agents", "Agentic Workflows", "n8n", "Workflow Automation",
+    "Function Calling", "Structured Data Extraction", "LLM-powered Applications",
+    "REST API Integration", "JSON-based Workflows"
+  ] as string[],
+
+  cloud: [
+    "AWS (S3, EC2, SageMaker)", "Azure ML", "Google Cloud Platform",
+    "Linux", "Windows", "Cloud-Based ML Deployment", "Edge-to-Cloud Architecture"
+  ] as string[],
+
+  devops: [
+    "MLflow", "DVC", "Docker", "Kubernetes", "Jenkins", "CI/CD", "FastAPI",
+    "Git", "GitHub", "VS Code", "PyCharm", "Jupyter", "PowerShell",
+    "Microsoft 365", "Postman", "Docker Desktop"
+  ] as string[],
+
+  web: [
+    "React.js", "Next.js", "Vite", "Tailwind CSS",
+    "Responsive Web Applications", "REST API Development"
+  ] as string[],
+
+  optimization: [
+    "ONNX", "TensorRT", "Pruning", "Quantization", "Mixed Precision",
+    "Inference Optimization", "Model Compression", "CPU/GPU Optimization",
+    "NVIDIA Jetson", "ARM-Based Deployment", "Real-Time Inference", "Edge AI"
+  ] as string[],
+
+  dataEngineering: [
+    "ETL Pipelines", "Data Cleaning", "Data Transformation", "Data Validation",
+    "Data Quality", "Exploratory Data Analysis (EDA)", "Statistical Analysis",
+    "Pandas", "NumPy", "Scikit-learn"
+  ] as string[],
+
+  autonomousSystems: [
+    "ADAS", "LiDAR Processing", "Radar Data Processing", "Sensor Validation",
+    "Sensor Fusion", "ROS", "Vehicle Perception", "Object Tracking",
+    "Time-Series Analysis", "Embedded AI"
+  ] as string[],
+
+  annotation: [
+    "CVAT", "Label Studio", "Data Annotation", "Annotation Quality Control",
+    "Dataset Validation", "Image Preprocessing"
+  ] as string[],
+
+  visualization: [
+    "Power BI", "Tableau", "Matplotlib", "Seaborn",
+    "Interactive Dashboards", "KPI Reporting", "Automated Reporting", "Data Storytelling"
+  ] as string[],
+
+  aiAssistedDevelopment: [
+    "GitHub Copilot", "ChatGPT", "Claude", "Google Gemini",
+    "AI-assisted Coding", "Code Generation", "Debugging",
+    "Code Review", "Technical Research"
+  ] as string[],
+},
+
+projects: <Project[]>[
+  {
+    title: "AI-Powered Product Recognition & Agent Workflow Platform",
+    subtitle: "Generative AI · Agentic Automation",
+    period: "2026",
+    bullets: [
+      "Designed and implemented an AI-powered product recognition workflow using n8n, combining rule-based decision logic with Groq LLM reasoning to automate product identification and context-aware interactions",
+      "Developed workflows that transform unstructured user requests into structured JSON, enabling reliable AI decision-making, workflow orchestration, and REST API integration",
+      "Built multilingual conversational AI with automated chat-history management, demonstrating practical experience in LLM integration, AI agents, and workflow automation"
+    ],
+    tech: ["React", "TypeScript", "n8n", "Groq LLM", "REST APIs", "Google Sheets"]
+  },
+  {
+    title: "AI Incident Commander",
+    subtitle: "Agentic AI · Autonomous Incident Response",
+    period: "2026",
+    bullets: [
+      "Developed an autonomous LLM-based incident response agent with dynamic tool execution for investigating and responding to technical incidents",
+      "Implemented human-approval workflows to maintain controlled execution and enable human oversight during automated incident response",
+      "Integrated memory-based learning to improve future incident handling and demonstrate practical experience with autonomous agents and agentic workflows"
+    ],
+    tech: ["Python", "LLMs", "AI Agents", "Function Calling", "Tool Execution", "Memory", "Human-in-the-Loop"]
+  },
+  {
+    title: "AkshayPortfolio - Personal Portfolio Website",
+    subtitle: "Full-Stack Web Development · Generative AI",
+    period: "2026",
+    bullets: [
+      "Built a responsive portfolio website using Next.js 16, TypeScript, and Tailwind CSS", 
+      "Developed a Groq-powered AI Chat Twin for resume-grounded Q&A with streaming responses", 
+      "Built an AI Job Match Analyzer for match scores, matched skills, and skill gaps", 
+      "Implemented reusable animated UI with Framer Motion, themes, and responsive layouts", 
+      "Deployed on Vercel with Next.js API routes for AI features"
+    ],
+    tech: [
+      "Next.js 16",
+      "TypeScript",
+      "Tailwind CSS v4",
+      "Framer Motion",
+      "Groq AI",
+      "Llama 3.1",
+      "Vercel",
+      "REST APIs"
+    ]
+  },
+  {
+    title: "AI-Based Object Detection & Segmentation Pipeline",
+    subtitle: "Computer Vision · Edge Deployment",
+    period: "2024 – 2025",
+    bullets: [
+      "Developed an end-to-end computer vision pipeline covering preprocessing, augmentation, model training, evaluation, optimization, and edge deployment across 5+ datasets",
+      "Implemented YOLOv5, Faster R-CNN, and U-Net models, achieving >92% detection accuracy on evaluated datasets",
+      "Optimized Jetson Nano inference using pruning and TensorRT, improving edge inference performance by approximately 60%"
+    ],
+    tech: ["PyTorch", "YOLOv5", "Faster R-CNN", "U-Net", "OpenCV", "Albumentations", "TensorRT", "Jetson Nano"]
+  },
+  {
+    title: "AI/ML Model Optimization & Edge Deployment",
+    subtitle: "Model Optimization · Edge AI",
+    period: "2024 – 2025",
+    bullets: [
+      "Optimized deep learning inference pipelines for cloud and edge deployment by converting PyTorch models to ONNX and applying pruning, quantization, mixed precision, and TensorRT optimization",
+      "Achieved up to 5× faster model execution while reducing model size and computational requirements for resource-constrained edge devices",
+      "Designed reproducible cloud-to-edge deployment workflows using Docker and CI/CD, reducing manual deployment effort by approximately 50%"
+    ],
+    tech: ["Python", "PyTorch", "ONNX", "TensorRT", "Docker", "AWS", "Raspberry Pi", "Pruning", "Quantization"]
+  },
+  {
+    title: "LLM-Based RAG Assistant",
+    subtitle: "Generative AI · RAG",
+    period: "2024",
+    bullets: [
+      "Developed a Retrieval-Augmented Generation system enabling natural-language queries over a knowledge base using semantic embeddings and FAISS vector search",
+      "Designed document ingestion, chunking, retrieval, and prompt-generation workflows, improving retrieval relevance by approximately 20–30% through experimentation",
+      "Deployed the application as a Dockerized FastAPI service for scalable, reproducible LLM inference"
+    ],
+    tech: ["Hugging Face Transformers", "Embeddings", "FAISS", "FastAPI", "Docker", "Python"]
+  },
+  {
+    title: "MLOps Deployment & Monitoring Platform",
+    subtitle: "MLOps · CI/CD",
+    period: "2023 – 2024",
+    bullets: [
+      "Designed an end-to-end MLOps workflow integrating experiment tracking, dataset and model versioning, containerization, automated testing, and deployment",
+      "Used MLflow and DVC across 20+ experiments and implemented Jenkins-based CI/CD pipelines, reducing model release time by approximately 35–40%",
+      "Built monitoring workflows for model performance, latency, and model drift to improve reliability and reproducibility across environments"
+    ],
+    tech: ["MLflow", "DVC", "Docker", "Git", "Jenkins", "Python", "CI/CD"]
+  },
+  {
+    title: "Vehicle Position & Dimension Prediction",
+    subtitle: "Automotive AI · LiDAR · Time-Series ML",
+    period: "2022 – 2023",
+    bullets: [
+      "Developed a machine learning pipeline for estimating vehicle position and dimensions using LiDAR/Velodyne sensor data across different driving scenarios",
+      "Performed sensor-data preprocessing, feature engineering, dataset preparation, and regression/time-series analysis to model vehicle movement and characteristics",
+      "Evaluated predictions across multiple scenarios, demonstrating practical experience in automotive AI, sensor data processing, and ADAS applications"
+    ],
+    tech: ["Python", "LiDAR", "Velodyne", "Pandas", "NumPy", "Scikit-learn", "Time-Series ML"]
+  },
+  {
+    title: "Camera Calibration & Image Processing Automation",
+    subtitle: "Computer Vision · Image Processing",
+    period: "2022 – 2023",
+    bullets: [
+      "Developed an automated camera calibration and image-processing pipeline for computer vision applications using OpenCV",
+      "Performed intrinsic calibration with a reprojection error of 0.0156 and implemented edge detection, perspective correction, and geometric transformations",
+      "Automated repetitive image-processing tasks, reducing manual image adjustment effort by approximately 50% and validating calibration across multiple camera configurations"
+    ],
+    tech: ["Python", "OpenCV", "NumPy"]
+  },
+  {
+    title: "Predictive Analytics Data Platform",
+    subtitle: "Data Engineering · Analytics · Machine Learning",
+    period: "2021 – 2022",
+    bullets: [
+      "Built a data analytics and machine learning pipeline combining structured and semi-structured datasets for predictive analysis and automated data preparation",
+      "Developed ETL, preprocessing, feature engineering, classification, and regression workflows using Python and SQL, reducing data preparation time by approximately 45%",
+      "Created Power BI and Tableau dashboards to visualize analytical results and support data-driven decision-making"
+    ],
+    tech: ["Python", "SQL", "Pandas", "Scikit-learn", "Power BI", "Tableau"]
+  }
+],
+
+
 
   certifications: <Certification[]>[
     {
@@ -341,7 +512,7 @@ export const resume = {
     journal: "International Journal of Scientific and Engineering Research (IJSER)",
     volume: "Volume 12, Issue 12",
     date: "Dec 2021",
-    link: "https://www.ijser.org/onlineResearchPaperViewer.aspx?Evaluation-of-dimensions-of-a-vehicle-using-Velodyne-and-Blickfeld-LiDAR.pdf"
+    link: "https://github.com/akshay9396/Detection-of-the-future-position-and-dimensions-of-cars-with-Blickfeld-and-Velodyne-sensors"
   },
 
   drivingLicense: "Class B"
