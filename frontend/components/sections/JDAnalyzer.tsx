@@ -20,11 +20,23 @@ function ScoreRing({ score }: { score: number }) {
   const color = score >= 75 ? '#10b981' : score >= 50 ? '#7c3aed' : '#f59e0b';
 
   return (
-    <div className="relative flex items-center justify-center w-28 h-28">
-      <svg className="absolute inset-0 -rotate-90" width="112" height="112" viewBox="0 0 112 112">
-        <circle cx="56" cy="56" r={radius} fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth="8" />
+    <div className="relative flex items-center justify-center w-24 h-24 shrink-0">
+      <svg
+        className="absolute inset-0 w-full h-full -rotate-90"
+        viewBox="0 0 112 112"
+      >
+        <circle
+          cx="56"
+          cy="56"
+          r={radius}
+          fill="none"
+          stroke="rgba(255,255,255,0.08)"
+          strokeWidth="8"
+        />
         <motion.circle
-          cx="56" cy="56" r={radius}
+          cx="56"
+          cy="56"
+          r={radius}
           fill="none"
           stroke={color}
           strokeWidth="8"
@@ -35,9 +47,10 @@ function ScoreRing({ score }: { score: number }) {
           transition={{ duration: 1.2, ease: 'easeOut' }}
         />
       </svg>
+
       <div className="text-center">
         <motion.p
-          className="text-2xl font-black"
+          className="text-[27px] font-black leading-none"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
@@ -45,7 +58,12 @@ function ScoreRing({ score }: { score: number }) {
         >
           {score}%
         </motion.p>
-        <p className="text-[10px] uppercase tracking-wider" style={{ color: 'var(--text-secondary)' }}>match</p>
+        <p
+          className="text-[10px] uppercase tracking-wider"
+          style={{ color: 'var(--text-secondary)' }}
+        >
+          match
+        </p>
       </div>
     </div>
   );
@@ -189,16 +207,25 @@ export default function JDAnalyzer() {
                     className="flex flex-col gap-4"
                   >
                     {/* Score + verdict */}
-                    <div className="flex items-center gap-5">
+                    <div className="flex items-start gap-5">
                       <ScoreRing score={result.score} />
-                      <div>
+
+                      <div className="min-w-0 flex-1">
                         <span
                           className="inline-block px-3 py-1 rounded-full text-xs font-bold"
-                          style={{ background: `${verdictColor}22`, color: verdictColor, border: `1px solid ${verdictColor}44` }}
+                          style={{
+                            background: `${verdictColor}22`,
+                            color: verdictColor,
+                            border: `1px solid ${verdictColor}44`
+                          }}
                         >
                           {result.verdict}
                         </span>
-                        <p className="mt-2 text-xs leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
+
+                        <p
+                          className="mt-2 text-xs leading-relaxed"
+                          style={{ color: 'var(--text-secondary)' }}
+                        >
                           {result.summary}
                         </p>
                       </div>
