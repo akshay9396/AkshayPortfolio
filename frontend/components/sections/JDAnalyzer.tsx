@@ -37,7 +37,7 @@ function ScoreRing({ score }: { score: number }) {
       </svg>
       <div className="text-center">
         <motion.p
-          className="text-2xl font-extrabold"
+          className="text-xl font-extrabold"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
