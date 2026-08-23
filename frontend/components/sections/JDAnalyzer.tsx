@@ -45,7 +45,7 @@ function ScoreRing({ score }: { score: number }) {
         >
           {score}%
         </motion.p>
-        <p className="text-[9px] uppercase tracking-wider" style={{ color: 'var(--text-secondary)' }}>match</p>
+        <p className="text-[8px] uppercase tracking-wider" style={{ color: 'var(--text-secondary)' }}>match</p>
       </div>
     </div>
   );
