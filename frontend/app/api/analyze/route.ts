@@ -45,12 +45,13 @@ Respond ONLY with a valid JSON object in exactly this format (no markdown, no ex
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model: 'llama-3.1-8b-instant',
+        model: 'openai/gpt-oss-20b',
         messages: [
           { role: 'user', content: prompt },
         ],
         max_tokens: 1024,
         temperature: 0.3,
+        include_reasoning: false,
       }),
     });
 
