@@ -37,7 +37,7 @@ function ScoreRing({ score }: { score: number }) {
       </svg>
       <div className="text-center">
         <motion.p
-          className="text-2xl font-black"
+          className="text-2xl font-extrabold"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
@@ -45,7 +45,7 @@ function ScoreRing({ score }: { score: number }) {
         >
           {score}%
         </motion.p>
-        <p className="text-[10px] uppercase tracking-wider" style={{ color: 'var(--text-secondary)' }}>match</p>
+        <p className="text-[9px] uppercase tracking-wider" style={{ color: 'var(--text-secondary)' }}>match</p>
       </div>
     </div>
   );
